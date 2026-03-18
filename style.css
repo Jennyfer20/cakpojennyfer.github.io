@@ -55,8 +55,10 @@ section { padding: 90px 80px; }
 
 /* ══ SERVICES ══ */
 #services { background: #fff; }
-.grille-services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: #e8e8e8; border: 1px solid #e8e8e8; }
-.carte-service { background: #fff; padding: 48px 32px; text-align: center; transition: background 0.2s; }
+.grille-services { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1px; background: #e8e8e8; border: 1px solid #e8e8e8; }
+.carte-service { grid-column: span 2; background: #fff; padding: 48px 32px; text-align: center; transition: background 0.2s; }
+.carte-service:nth-child(7) { grid-column: 2 / 4; }
+.carte-service:nth-child(8) { grid-column: 4 / 6; }
 .carte-service:hover { background: #f0eeff; }
 .service-icone { font-size: 48px; margin-bottom: 20px; }
 .carte-service h3 { font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #4a3aff; margin-bottom: 12px; }
