@@ -271,14 +271,14 @@
     <h2 class="titre-centre">Voici un formulaire de contact</h2>
     <p class="sous-titre-centre">Vous avez des questions ?</p>
     <div class="contact-layout">
-      <div class="contact-form">
+      <form class="contact-form" action="https://formspree.io/f/TON_ID" method="POST">
         <div class="form-row">
-          <input type="text" placeholder="Nom" class="form-input" />
-          <input type="email" placeholder="E-mail" class="form-input" />
+          <input type="text" name="nom" placeholder="Nom" class="form-input" required />
+          <input type="email" name="email" placeholder="E-mail" class="form-input" required />
         </div>
-        <textarea placeholder="Message" class="form-input form-textarea"></textarea>
-        <button class="btn-submit">Envoyer</button>
-      </div>
+        <textarea name="message" placeholder="Message" class="form-input form-textarea" required></textarea>
+        <button type="submit" class="btn-submit">Envoyer</button>
+      </form>
       <div class="contact-infos">
         <div class="info-item">
           <span class="info-icone">✉️</span>
