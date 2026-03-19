@@ -271,14 +271,20 @@
     <h2 class="titre-centre">Voici un formulaire de contact</h2>
     <p class="sous-titre-centre">Vous avez des questions ?</p>
     <div class="contact-layout">
-      <form class="contact-form" action="https://formspree.io/f/mvzwdjqd" method="POST">
+      <form class="contact-form" id="contact-form" action="https://formspree.io/f/mvzwdjqd" method="POST">
         <div class="form-row">
           <input type="text" name="nom" placeholder="Nom" class="form-input" required />
           <input type="email" name="email" placeholder="E-mail" class="form-input" required />
         </div>
         <textarea name="message" placeholder="Message" class="form-input form-textarea" required></textarea>
-        <button type="submit" class="btn-submit">Envoyer</button>
+        <button type="submit" class="btn-submit" id="btn-envoyer">Envoyer</button>
       </form>
+      <div class="form-merci" id="form-merci" style="display:none;">
+        <div class="merci-icone">✅</div>
+        <h3>Message envoyé !</h3>
+        <p>Merci pour votre message. Je vous répondrai dans les plus brefs délais.</p>
+        <button class="btn-submit" id="btn-nouveau" style="margin-top:24px;">Envoyer un autre message</button>
+      </div>
       <div class="contact-infos">
         <div class="info-item">
           <span class="info-icone">✉️</span>

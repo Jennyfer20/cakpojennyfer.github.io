@@ -174,6 +174,12 @@ section { padding: 90px 80px; }
 }
 
 
+/* ══ FORMULAIRE MERCI ══ */
+.form-merci { text-align: center; padding: 48px 32px; }
+.merci-icone { font-size: 56px; margin-bottom: 20px; }
+.form-merci h3 { font-family: 'Playfair Display', serif; font-size: 24px; color: #4a3aff; margin-bottom: 12px; }
+.form-merci p { color: #666; font-size: 14px; line-height: 1.8; }
+
 /* ══ FOOTER ══ */
 footer { text-align: center; padding: 32px; color: #999; font-size: 12px; background: #1a1a2a; color: #555; }
 /* ════════════════════════════
