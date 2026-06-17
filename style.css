@@ -107,6 +107,19 @@ section { padding: 90px 80px; }
 .badge-statut.en-cours { background: #fff4e0; color: #e07b00; }
 .badge-statut.acquis { background: #e8f5e9; color: #2e7d32; }
 
+/* ══ CERTIFICATIONS ══ */
+#certifications { background: #fff; }
+.grille-certifs { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; max-width: 760px; margin: 0 auto; }
+.carte-certif { background: #f5f5f5; border-radius: 8px; padding: 32px; border-left: 4px solid #4a3aff; transition: transform 0.2s, box-shadow 0.2s; }
+.carte-certif:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(74,58,255,0.12); }
+.certif-haut { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+.certif-icone { font-size: 40px; }
+.carte-certif h3 { font-size: 16px; font-weight: 600; margin-bottom: 6px; }
+.certif-orga { color: #4a3aff; font-size: 12px; font-weight: 600; margin-bottom: 12px; }
+.certif-desc { color: #666; font-size: 13px; line-height: 1.7; margin-bottom: 16px; }
+.certif-meta { display: flex; gap: 16px; flex-wrap: wrap; }
+.certif-meta span { background: #f0eeff; color: #4a3aff; font-size: 12px; padding: 5px 12px; border-radius: 4px; font-weight: 600; }
+
 /* ══ CONTACT ══ */
 #contact { background: #fff; text-align: center; }
 .contact-layout { display: grid; grid-template-columns: 1.5fr 1fr; gap: 64px; text-align: left; max-width: 900px; margin: 0 auto; }
